@@ -3,12 +3,11 @@
 
 
 int main(){
-    int length, breadth;
-    printf("Enter the length of rectangle : ");
-    scanf("%d", &length);
-    printf("Enter the breadth of rectangle : ");
-    scanf("%d", &breadth);
-    int area = length * breadth;
-    printf("The are of rectangle is %d", area);
+    int radius;
+    printf("What is the radius of your circle : ");
+    scanf("%d", &radius);
+    float pi = 3.1416;
+    float circle = 2 * pi * radius;
+    printf("the are of circle is %.2f", circle);
     return 0;
 }
