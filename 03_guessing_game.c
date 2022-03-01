@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
+#include <time.h>
 
 int main(){
-    int num = 5,chance = 5,win = 0,userInput;
+    srand(time(0));
+    int random = rand();
+    int num = (random % 1000) % 100, chance = 5, win = 0, userInput;
     while(chance != 0){
         printf("Guess the number : ");
         scanf("%d", &userInput);
